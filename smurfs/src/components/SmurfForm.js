@@ -39,15 +39,7 @@ const SmurfForm = props => {
 
 return (
     <div>
-        <form
-            onSubmit={handleSubmit}
-            style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center"
-            }}
-        >
+        <form onSubmit={handleSubmit}>
         <input
                 type="text"
                 name="name"
@@ -69,7 +61,7 @@ return (
             onChange={handleHeightChanges}
             placeholder="Height"
         />
-        <button>Add Smurf</button>
+        <button>New Smurf</button>
     </form>
     </div>
 );
